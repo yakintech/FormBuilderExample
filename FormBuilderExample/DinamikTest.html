@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form action="/Home/CreateJsonobject" method="post">
+        <div class="rendered-form"><div class="fb-text form-group field-text-1515398092146"><label for="text-1515398092146" class="fb-text-label">Text Field</label><input type="text" name="text-1515398092146" class="red form-control" id="text-1515398092146"></div><div class="fb-text form-group field-text-1515398093557"><label for="text-1515398093557" class="fb-text-label">Text Field</label><input type="text" name="text-1515398093557" class="red form-control" id="text-1515398093557"></div><div class="fb-button form-group field-button-1515398094642"><button type="button" class="btn btn-default" name="button-1515398094642" style="default" id="button-1515398094642">Button</button></div></div>
+        <input type="submit" name="name" value="Kayıt" />
+    </form>
+</body>
+</html>
+<script>
+    $("#picasso").click(function () {
+        var formData = new FormData(document.forms[0]);
+
+        for (var pair of formData.entries()) {
+            console.log(pair[0] + ': ' + pair[1]);
+        }
+    })
+</script>
