@@ -18,6 +18,7 @@ namespace FormBuilderExample.Controllers
         [HttpPost]
         public ActionResult Index(FormCollection collection)
         {
+            inte
             for (int i = 0; i < collection.Count; i++)
             {
                 string value = collection[i];
